@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+              Title="XF Infinite Scroll"
+             xmlns:views="clr-namespace:XFInfiniteScroll.Views"
+             x:Class="XFInfiniteScroll.MainPage">
+
+    <TabbedPage.Children>
+        <NavigationPage Title="Single Items">
+            <x:Arguments>
+                <views:SingleViewList />
+            </x:Arguments>
+        </NavigationPage>
+        <NavigationPage Title="Group Items"> 
+            <x:Arguments>
+                <views:GroupViewList />
+            </x:Arguments>
+        </NavigationPage>
+    </TabbedPage.Children>
+
+</TabbedPage>
